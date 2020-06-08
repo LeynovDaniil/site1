@@ -1,0 +1,157 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+
+	font-family: AdobeInvisFont,TimesNewRomanPSMT,MyriadPro-Regular, sans-serif;
+	padding: 30px;
+	
+}
+
+
+
+/*.check{
+	display: none;
+
+}
+
+.label_1 {
+	display: block;
+	padding-left: 20px;
+	margin-bottom: 20px; 
+
+}
+
+.label_1::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: black  0 0 no-repeat;
+	vertical-align: middle;
+	margin-left: -10px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.check:checked + label_1::before {
+	background-color: red;
+	content: 'V';
+	text-align: center;
+	padding-top: 3px;
+
+}*/
+
+.content {
+	max-width: 1200px;
+}
+.check {
+	width: 20px;
+	height: 20px;
+}
+label {	
+	display: block;
+	margin-bottom: 23px;
+	font-size: 30px;
+}
+.lorem {
+	margin: 30px;
+	font-size: 30px;
+	color: grey;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	border: 1px solid #000;
+	margin: 30px;
+	padding: 30px;
+	background: #ffd;
+
+}
+
+
+.lorem_block {
+	text-align: center;
+	display: inline-block;
+	max-width: 500px;
+	font-size: 30px;
+	color: grey;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	border: 1px solid #000;
+	margin: 30px;
+	padding: 30px;
+	background: #ffd;
+
+}
+.href {
+
+	font-size: 30px;
+	color: grey;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+	margin: 30px;
+	text-align: center;
+	padding: 30px;
+	
+}
+
+.href:hover{
+	transition: 1s;
+	text-decoration: underline;
+	color: blue;
+}
+.href:active{
+	transition: 1s;
+	
+	color: darkblue;
+}
+
+@media (max-width: 1200px) {
+	.content{
+		max-width: 960px;
+	}
+}
+@media (max-width: 922px) {
+	.content{
+		max-width: 750px;
+	}
+}
+@media (max-width: 720px) {
+	.content{
+		max-width: none;
+	}
+}
